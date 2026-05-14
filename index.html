@@ -3,94 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InkSolvent | Digital Lifeguard for Small Business</title>
+    <title>InkSolvent | High-Performance Infrastructure & IT Systems</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .glass { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
-        .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+        .terminal-bg { background-color: #020617; }
+        .accent-gradient { background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans">
+<body class="terminal-bg text-slate-300 font-sans selection:bg-blue-500/30">
 
-    <header class="hero-gradient text-white py-20 px-6">
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-5xl font-bold mb-4 tracking-tight">Your Business is Online. <br><span class="text-blue-400">Is it Safe?</span></h1>
-            <p class="text-xl text-slate-300 mb-8 font-light">Secure backups, private networking, and IT rescue for local businesses who can't afford to go down.</p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#contact" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-lg font-bold transition">Get a Free Safety Audit</a>
-                <a href="#services" class="bg-slate-700 hover:bg-slate-600 text-white px-8 py-4 rounded-lg font-bold transition">View Services</a>
-            </div>
+    <nav class="p-6 max-w-6xl mx-auto flex justify-between items-center">
+        <div class="text-2xl font-black tracking-tighter text-white">INK<span class="text-blue-500">SOLVENT</span></div>
+        <a href="mailto:hello@inksolvent.com" class="text-sm font-mono border border-slate-700 px-4 py-2 rounded-full hover:bg-slate-800 transition">Contact Admin</a>
+    </nav>
+
+    <header class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="max-w-3xl">
+            <h1 class="text-6xl font-extrabold text-white mb-6 leading-tight">Elite Infrastructure for <span class="text-transparent bg-clip-text accent-gradient">High-Stakes Creators.</span></h1>
+            <p class="text-xl text-slate-400 mb-10 leading-relaxed">From secure production pipelines to hardened game community infrastructure. We build, host, and defend the systems that keep your vision online.</p>
+            <a href="mailto:hello@inksolvent.com" class="inline-block accent-gradient text-white px-10 py-5 rounded-xl font-bold text-lg shadow-lg shadow-blue-500/20 hover:scale-105 transition">Schedule a Strategy Consultation</a>
         </div>
     </header>
 
-    <section class="py-16 px-6 max-w-5xl mx-auto">
-        <div class="grid md:grid-cols-3 gap-8 text-center">
-            <div class="p-6 bg-white rounded-xl shadow-sm border border-slate-100">
-                <div class="text-blue-600 text-3xl mb-4">🛡️</div>
-                <h3 class="font-bold text-lg mb-2">Data Protection</h3>
-                <p class="text-slate-600 text-sm">If your server crashed today, you'd lose everything. We automate encrypted off-site backups.</p>
+    <section class="py-20 bg-slate-900/50 border-y border-slate-800 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-white mb-6">Built on a decade of elite troubleshooting.</h2>
+                <p class="text-slate-400 mb-4 italic text-lg">"If it has a kernel, I can fix it."</p>
+                <p class="text-slate-400 mb-6">With a history as an <strong>Apple Genius Admin</strong>, I’ve managed mission-critical hardware and software ecosystems for thousands of users. At InkSolvent, I bring that same surgical precision to your private servers, mesh networks, and dev environments.</p>
+                <div class="flex gap-4">
+                    <span class="bg-blue-900/30 text-blue-400 px-3 py-1 rounded-md text-sm border border-blue-500/30 font-mono">Hardware Mastery</span>
+                    <span class="bg-purple-900/30 text-purple-400 px-3 py-1 rounded-md text-sm border border-purple-500/30 font-mono">Network Security</span>
+                </div>
             </div>
-            <div class="p-6 bg-white rounded-xl shadow-sm border border-slate-100">
-                <div class="text-blue-600 text-3xl mb-4">🔑</div>
-                <h3 class="font-bold text-lg mb-2">Secure Access</h3>
-                <p class="text-slate-600 text-sm">Stop using sketchy VPNs. We build private "Ghost Networks" for your team to work from anywhere.</p>
-            </div>
-            <div class="p-6 bg-white rounded-xl shadow-sm border border-slate-100">
-                <div class="text-blue-600 text-3xl mb-4">🚀</div>
-                <h3 class="font-bold text-lg mb-2">IT Rescue</h3>
-                <p class="text-slate-600 text-sm">Website down? Hacked? Email broken? We're the emergency line for your digital life.</p>
+            <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 shadow-2xl">
+                <h3 class="text-xl font-bold text-white mb-4">Infrastructure Expertise</h3>
+                <ul class="space-y-4 font-mono text-sm">
+                    <li class="flex items-start gap-3"><span class="text-blue-500">></span> <span>Secure Mesh Networking (ZeroTier/Tailscale)</span></li>
+                    <li class="flex items-start gap-3"><span class="text-blue-500">></span> <span>Private Git & Dev Environments (Gitea)</span></li>
+                    <li class="flex items-start gap-3"><span class="text-blue-500">></span> <span>Hardened Web Hosting & Dedicated VPS</span></li>
+                    <li class="flex items-start gap-3"><span class="text-blue-500">></span> <span>Automated Production Backups</span></li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section id="services" class="py-16 bg-slate-100 px-6">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12">Lifeguard Plans</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-2xl shadow-lg border-2 border-transparent hover:border-blue-500 transition">
-                    <h4 class="font-bold text-slate-500 uppercase tracking-widest text-sm">The Safety Net</h4>
-                    <p class="text-4xl font-bold my-4">$99<span class="text-lg text-slate-400">/mo</span></p>
-                    <ul class="space-y-3 text-slate-600 mb-8">
-                        <li>✅ Weekly Off-site Backups</li>
-                        <li>✅ Security Patching</li>
-                        <li>✅ SSL Certificate Mgmt</li>
-                    </ul>
-                    <button class="w-full py-3 rounded-lg border-2 border-blue-600 text-blue-600 font-bold hover:bg-blue-50">Choose Plan</button>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-xl border-2 border-blue-500 transform scale-105">
-                    <div class="bg-blue-500 text-white text-xs font-bold py-1 px-3 rounded-full inline-block mb-4">MOST POPULAR</div>
-                    <h4 class="font-bold text-slate-500 uppercase tracking-widest text-sm">The Secure Office</h4>
-                    <p class="text-4xl font-bold my-4">$249<span class="text-lg text-slate-400">/mo</span></p>
-                    <ul class="space-y-3 text-slate-600 mb-8">
-                        <li>✅ Everything in Safety Net</li>
-                        <li>✅ **Private Mesh Network**</li>
-                        <li>✅ Secure Remote Access</li>
-                        <li>✅ 24/7 Uptime Monitoring</li>
-                    </ul>
-                    <button class="w-full py-3 rounded-lg bg-blue-600 text-white font-bold hover:bg-blue-700">Choose Plan</button>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-lg border-2 border-transparent hover:border-blue-500 transition">
-                    <h4 class="font-bold text-slate-500 uppercase tracking-widest text-sm">The Digital Guard</h4>
-                    <p class="text-4xl font-bold my-4">$499<span class="text-lg text-slate-400">/mo</span></p>
-                    <ul class="space-y-3 text-slate-600 mb-8">
-                        <li>✅ Everything in Secure Office</li>
-                        <li>✅ On-Call Priority Support</li>
-                        <li>✅ Website Hosting Included</li>
-                        <li>✅ Monthly Strategy Call</li>
-                    </ul>
-                    <button class="w-full py-3 rounded-lg border-2 border-blue-600 text-blue-600 font-bold hover:bg-blue-50">Choose Plan</button>
-                </div>
+    <section class="py-24 px-6 max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-white mb-16 text-center">Specialized Solutions</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="p-8 border border-slate-800 rounded-3xl hover:bg-slate-900 transition">
+                <div class="text-4xl mb-6">🎬</div>
+                <h3 class="text-xl font-bold text-white mb-4">Production Teams</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Secure, low-latency file sharing and remote collaboration pipelines for video, audio, and VFX houses. Keep your IP off the public cloud.</p>
+            </div>
+            <div class="p-8 border border-slate-800 rounded-3xl hover:bg-slate-900 transition">
+                <div class="text-4xl mb-6">🎮</div>
+                <h3 class="text-xl font-bold text-white mb-4">Game Communities</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Scaleable infrastructure for high-traffic Discord integrations, game servers, and community hubs that require 99.9% uptime.</p>
+            </div>
+            <div class="p-8 border border-slate-800 rounded-3xl hover:bg-slate-900 transition">
+                <div class="text-4xl mb-6">💼</div>
+                <h3 class="text-xl font-bold text-white mb-4">Internal IT Systems</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Replacing bloated SaaS with lean, private, and secure internal tools. We help you own your data again.</p>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="py-20 text-center bg-white border-t border-slate-200">
-        <h2 class="text-3xl font-bold mb-4">Stop the Spiral.</h2>
-        <p class="text-slate-600 mb-8 max-w-md mx-auto">Contact InkSolvent today for a 15-minute audit. Let's make your business unshakeable.</p>
-        <p class="font-mono text-blue-600 font-bold">hello@inksolvent.com</p>
-        <div class="mt-12 text-slate-400 text-sm">
-            &copy; 2026 InkSolvent Consulting. Built with stability in mind.
-        </div>
+    <footer class="py-32 px-6 text-center">
+        <h2 class="text-5xl font-bold text-white mb-6 tracking-tight">Stop the technical debt.</h2>
+        <p class="text-slate-400 mb-10 max-w-xl mx-auto text-lg font-light">Whether you're scaling a creative team or securing a small empire, let's build the foundation together.</p>
+        <a href="mailto:hello@inksolvent.com" class="inline-block border-2 border-white text-white px-12 py-5 rounded-full font-bold hover:bg-white hover:text-slate-950 transition">Email the Consultant</a>
     </footer>
 
 </body>
