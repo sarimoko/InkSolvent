@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managed Web Infrastructure | InkSolvent</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .blueprint-grid {
+            background-color: #0f172a;
+            background-image: radial-gradient(#1e293b 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .status-pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
+    </style>
+</head>
+<body class="blueprint-grid text-slate-300 font-sans pb-20">
+
+    <nav class="p-8 max-w-5xl mx-auto flex justify-between items-baseline">
+        <div class="text-white font-mono tracking-tighter text-xl">
+            <span class="text-blue-500">PROD_</span>INFRASTRUCTURE_SPEC
+        </div>
+        <div class="text-xs font-mono text-slate-500 uppercase">Rev: 2026.04</div>
+    </nav>
+
+    <header class="max-w-5xl mx-auto px-8 py-12">
+        <h1 class="text-4xl font-bold text-white mb-12">Managed Web Environments</h1>
+        
+        <div class="space-y-2 mb-16">
+            <div class="bg-blue-600/20 border border-blue-500 p-4 rounded-t-xl">
+                <span class="font-mono text-xs text-blue-400 block mb-1">LAYER 04: APPLICATION</span>
+                <span class="text-white font-bold">Custom CMS Setup (WordPress, Ghost, or Headless)</span>
+            </div>
+            <div class="bg-indigo-600/20 border border-indigo-500 p-4">
+                <span class="font-mono text-xs text-indigo-400 block mb-1">LAYER 03: ENCRYPTION & SSL</span>
+                <span class="text-white font-bold">Auto-Renewing HTTPS & Hardened Headers</span>
+            </div>
+            <div class="bg-purple-600/20 border border-purple-500 p-4">
+                <span class="font-mono text-xs text-purple-400 block mb-1">LAYER 02: SECURITY ENGINE</span>
+                <span class="text-white font-bold">SSH Key-Only Auth & Firewall (UFW) Management</span>
+            </div>
+            <div class="bg-slate-800/80 border border-slate-600 p-4 rounded-b-xl">
+                <span class="font-mono text-xs text-slate-500 block mb-1">LAYER 01: COMPUTE</span>
+                <span class="text-white font-bold">Dedicated VPS Resource Allocation</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="max-w-5xl mx-auto px-8 grid md:grid-cols-2 gap-12">
+        
+        <div>
+            <h3 class="text-blue-500 font-mono text-sm uppercase tracking-widest mb-4">Hardening & Security</h3>
+            <ul class="space-y-6">
+                <li>
+                    <strong class="text-white block">SSH & Access Control</strong>
+                    <p class="text-sm text-slate-400">We disable password-based logins entirely. Access is managed via cryptographic keys, making "brute force" attacks mathematically impossible.</p>
+                </li>
+                <li>
+                    <strong class="text-white block">Automated HTTPS/SSL</strong>
+                    <p class="text-sm text-slate-400">Fully managed Let's Encrypt certificates with 90-day auto-renewal cycles. Your site never shows an "Unsafe" warning.</p>
+                </li>
+                <li>
+                    <strong class="text-white block">Continuous Uptime Monitoring</strong>
+                    <p class="text-sm text-slate-400 text-flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-green-500 status-pulse inline-block"></span>
+                        Pulse-check every 60 seconds. If your site drops, I'm alerted before you are.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bg-slate-900/80 border border-slate-700 p-8 rounded-2xl">
+            <h3 class="text-purple-400 font-mono text-sm uppercase tracking-widest mb-4">Domain Sovereignty</h3>
+            <p class="text-sm text-slate-400 mb-6">We believe you should <strong>always own your domain.</strong> It is your digital deed. We offer two integration paths:</p>
+            
+            <div class="space-y-4">
+                <div class="p-4 border border-slate-700 rounded-lg bg-slate-800/50">
+                    <span class="text-white font-bold block mb-1">Full Delegation</span>
+                    <p class="text-xs text-slate-500">Provide temporary account access (Namecheap, Cloudflare, etc.), and we handle all DNS, MX, and TXT records for you.</p>
+                </div>
+                <div class="p-4 border border-slate-700 rounded-lg bg-slate-800/50">
+                    <span class="text-white font-bold block mb-1">Guided Integration</span>
+                    <p class="text-xs text-slate-500">We provide a bespoke "Implementation Guide" with the exact records you need to copy-paste into your registrar.</p>
+                </div>
+            </div>
+            <p class="mt-6 text-xs text-slate-500 italic">No conflict of interest. No technical lock-in. You keep the keys, we manage the engine.</p>
+        </div>
+    </section>
+
+    <footer class="max-w-5xl mx-auto px-8 mt-24">
+        <div class="border-t border-slate-800 pt-12 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div>
+                <h2 class="text-2xl font-bold text-white mb-2">Ready to deploy?</h2>
+                <p class="text-slate-500">Contact the admin for a custom quote based on your traffic needs.</p>
+            </div>
+            <a href="mailto:hello@inksolvent.com" class="bg-white text-slate-900 px-8 py-4 rounded-lg font-bold hover:bg-blue-500 hover:text-white transition">Request Build Quote</a>
+        </div>
+    </footer>
+
+</body>
+</html>
